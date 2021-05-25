@@ -33,6 +33,11 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+    buttons:
+    - title: "Newsletter"
+      payload: '/subscribe'
+    - title: "Privacy"
+      payload: '/privacy'
   utter_subscription:
   - text: Sure! How would you like to be contacted?
   utter_contact:
