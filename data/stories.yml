@@ -1,0 +1,71 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- story: interactive_story_2
+  steps:
+  - intent: subscribe
+  - action: utter_subscription
+  - intent: inform
+  - action: utter_contact
+  - action: utter_day_preference
+  - intent: day_preference
+  - action: utter_frequency_prefernce
+  - intent: frequecy_preference
+  - action: utter_confirmation
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: privacy
+  - action: utter_privacy
+
+- story: interactive_story_1
+  steps:
+  - intent: subscribe
+  - action: utter_subscription
+  - intent: inform
+    entities:
+    - contact: email@email.com
+  - action: utter_contact
+  - action: utter_day_preference
+  - intent: day_preference
+    entities:
+    - day: sundays
+  - action: utter_day_preference

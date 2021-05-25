@@ -1,0 +1,61 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- subscribe
+- day_preference
+- inform
+- privacy
+- frequecy_preference
+- deny
+- greet
+- mood_unhappy
+- mood_great
+- goodbye
+- affirm
+- bot_challenge
+- fequency_preference
+entities:
+- contact
+- day
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_subscription:
+  - text: Sure! How would you like to be contacted?
+  utter_contact:
+  - text: Great! We'll add that to our mailing list right now
+  utter_information:
+  - text: Great! We'll add that to our mailing list right now
+  utter_day_preference:
+  - text: When is the best time to contact you?
+  utter_frequency_prefernce:
+  - text: How often would you like to be contacted?
+  utter_confirmation:
+  - text: Thank you for signing up!
+  utter_privacy:
+  - text: Here's a link
+actions:
+- utter_cheer_up
+- utter_confirmation
+- utter_contact
+- utter_day_preference
+- utter_frequency_prefernce
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_information
+- utter_privacy
+- utter_subscription

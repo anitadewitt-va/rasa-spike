@@ -1,0 +1,133 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - thats it
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - i am feeling happy
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - i feel so sad right now
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+    - how do I sign up for the newsletter?
+    - How will I be informed of changes?
+    - How can I stay up to date?
+    - i would like to subscribe to the newsletter
+    - i would like to be updated about the news
+    - i would like to sign up for the newsletter
+    - i want to sign up for the newsletter
+- intent: inform
+  examples: |
+    - My email is [example@example.com](contact)
+    - [random@example.com](contact)
+    - Please send it to [anything@example.com](contact)
+    - Email is [something@example.com](contact)
+    - email@email.com
+    - this is my email email@email.com
+    - [email@email.com](contact)
+- intent: day_preference
+  examples: |
+    - I would like to be contacted on [Mondays](day)
+    - [Thursdays](day) work best for me
+    - [Tuesday](day) is the best day for me
+    - [Wednesday](day) mornings please
+    - [Saturday](day) afternoon
+    - On [Sunday](day)
+    - i would like to be contacted on [mondays](day)
+    - [tuesday](day) is fine
+    - [sundays](day)
+- intent: frequecy_preference
+  examples: |
+    - Weekly
+    - Monthly
+    - Bi-weekly
+    - Annually
+    - and weekly
+    - weekly
+- intent: privacy
+  examples: |
+    - What is youur privacy policy?
+    - Where can I find your privacy policy?
+    - what is your privacy policy?

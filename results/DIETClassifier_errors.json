@@ -1,0 +1,14 @@
+[
+  {
+    "text": "email@email.com",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "email@email.com",
+        "entity": "contact"
+      }
+    ],
+    "predicted_entities": []
+  }
+]
